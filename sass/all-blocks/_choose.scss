@@ -1,0 +1,92 @@
+.choose {
+  &__card {
+    @include center-item;
+    padding-top: 71px;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    @include for-tablet {
+      padding-top: 50px;
+      gap: 16px;
+    }
+    @include for-phone {
+      padding-top: 30px;
+      gap: 14px;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    color: $primary_color;
+    text-align: center;
+    @include for-tablet {
+      font-size: 32px;
+      line-height: 44px;
+      font-weight: 600;
+    }
+    @include for-phone {
+      font-size: 28px;
+      line-height: 40px;
+      font-weight: 500;
+    }
+  }
+  &__card__busines {
+    border: 1px solid rgba(128, 128, 128, 0.231);
+    padding: 31px 32px 31px 32px;
+    transition: 0.3s;
+
+    &__title {
+      max-width: 145px;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 40px;
+      letter-spacing: -1px;
+      color: $primary_color;
+      @include for-tablet {
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 600;
+      }
+      @include for-phone {
+        font-size: 22px;
+        line-height: 32px;
+        text-align: center;
+      }
+    }
+    &__text {
+      max-width: 232px;
+      font-family: $nav_font_title;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: $medium-gray;
+      @include for-tablet {
+        font-size: 14px;
+        line-height: 24px;
+      }
+      @include for-phone {
+        font-size: 12px;
+        line-height: 22px;
+        text-align: center;
+      }
+    }
+  }
+  &__card__busines {
+    transition: 0.8s ease;
+  }
+  &__card__busines:hover {
+    background-color: $button_color;
+    cursor: pointer;
+  }
+  &__card__busines div {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 15px;
+  }
+}
+.shuttle {
+  padding: 12px;
+}

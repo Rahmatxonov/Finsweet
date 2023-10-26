@@ -1,0 +1,116 @@
+.popular-blogs {
+  margin-top: 94px;
+  @include for-tablet {
+    margin-top: 70px;
+  }
+  @include for-phone {
+    margin-top: 50px;
+  }
+  &__card {
+    @include center-item;
+    flex-wrap: wrap;
+    gap: 10px;
+    @include for-tablet {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+    @include for-phone {
+      gap: 20px;
+    }
+    &__students {
+      transition: 0.8s ease;
+    }
+    &__students:hover {
+      cursor: pointer;
+      background-color: $button_color;
+      // background: radial-gradient(
+      //   circle,
+      //   rgba(255, 208, 80, 0.8464635854341737) 0%,
+      //   rgba(255, 208, 80, 0.8240546218487395) 50%,
+      //   rgba(255, 208, 80, 0.8352591036414566) 100%
+      // );
+    }
+  }
+  &__title {
+    max-width: 215px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    text-align: center;
+    margin-bottom: 64px;
+    @include for-tablet {
+      font-size: 32px;
+      line-height: 46px;
+    }
+    @include for-phone {
+      font-size: 30px;
+      line-height: 44px;
+    }
+  }
+  &__card__students__img {
+    max-width: 405px;
+    height: 318px;
+    width: 100%;
+  }
+  &__card__students__text {
+    max-width: 405px;
+    width: 100%;
+    font-family: $nav_font_title;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: $dark-gray;
+    padding-top: 32px;
+    @include for-tablet {
+      font-size: 12px;
+    }
+    @include for-phone {
+      font-size: 10px;
+      text-align: center;
+    }
+    &__span {
+      color: $purple_color;
+    }
+  }
+  &__card__students__title {
+    max-width: 405px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -1px;
+    color: $primary_color;
+    padding-top: 16px;
+    @include for-tablet {
+      font-size: 26px;
+      line-height: 36px;
+      letter-spacing: 1px;
+    }
+    @include for-phone {
+      font-size: 22px;
+      line-height: 32px;
+      text-align: center;
+    }
+  }
+  &__card__students__text2 {
+    max-width: 405px;
+    opacity: 70%;
+    font-family: $nav_font_title;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: $primary_color;
+    padding-top: 16px;
+    @include for-tablet {
+      font-size: 14px;
+      line-height: 24px;
+    }
+    @include for-phone {
+      font-size: 12px;
+      line-height: 22px;
+      text-align: center;
+    }
+  }
+}

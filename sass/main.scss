@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+@import "./all-blocks/fonts";
+@import "./all-blocks/mixins";
+@import "./all-blocks/variables";
+body {
+  overflow-x: hidden;
+  font-family: $primary_font_title;
+}
+.container {
+  max-width: 1340px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@import "./all-blocks/navbar";
+@import "./all-blocks/headers";
+@import "./all-blocks/popular";
+@import "./all-blocks/choose";
+@import "./all-blocks/footer";
+hr {
+  width: 1340px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: $dark-gray;
+  margin-top: 66px;
+  margin-bottom: 69px;
+  opacity: 40%;
+}

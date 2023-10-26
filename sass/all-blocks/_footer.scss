@@ -1,0 +1,62 @@
+footer {
+  margin-top: 73px;
+  background-color: $primary_color;
+  padding: 54px 80px 54px 80px;
+  position: sticky;
+  @include for-tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+  @include for-phone {
+    padding: 30px 0;
+  }
+}
+.footer-sticky {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include for-phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__left__title,
+  &__left__text {
+    max-width: 361px;
+    opacity: 70%;
+    font-family: $nav_font_title;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: $white_color;
+    gap: 12px;
+    @include for-tablet {
+      font-size: 13px;
+      line-height: 24px;
+      display: flex;
+      justify-content: center;
+    }
+    @include for-phone {
+      font-size: 10px;
+      line-height: 20px;
+      text-align: center;
+    }
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    column-gap: 26.67px;
+    flex-wrap: wrap;
+
+    @include for-phone {
+      padding-top: 28px;
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+    }
+    &__img {
+      display: block;
+    }
+  }
+}

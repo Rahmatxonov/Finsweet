@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/category.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="navbar">
+          <a href="./index.html"
+            ><img src="../images/icons/Logo.svg" alt="logotip"
+          /></a>
+          <ul class="navbar__menu">
+            <li class="navbar__menu__item">
+              <a class="navbar__menu__link" href="../index.html">Home</a>
+            </li>
+            <li class="navbar__menu__item">
+              <a class="navbar__menu__link" href="../pages/category.html"
+                >Category</a
+              >
+            </li>
+            <li class="navbar__menu__item">
+              <a class="navbar__menu__link" href="../pages/all-posts.html"
+                >All posts</a
+              >
+            </li>
+            <li class="navbar__menu__item">
+              <a class="navbar__menu__link" href="../pages/register.html"
+                >Register</a
+              >
+            </li>
+          </ul>
+          <img
+            id="navbar__img__addBurger"
+            src="../images/icons/add.png"
+            alt="added burger"
+          />
+          <i class="fa-solid fa-xmark" id="removeburger"></i>
+        </div>
+      </div>
+    </nav>
+    <div class="hero-category">
+      <h1 class="hero-category__title">Business</h1>
+      <p class="hero-category__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore.
+      </p>
+      <p class="hero-category__span">Blog > Business</p>
+    </div>
+    <form id="search-form" action="#">
+      <input
+        id="search-input"
+        type="text"
+        placeholder="Searching..."
+        required
+      />
+      <button>Search</button>
+    </form>
+    <div class="container">
+      <div id="search-input"></div>
+      <div id="input-post"></div>
+      <div id="input-box"></div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="footer-sticky">
+          <div class="footer-sticky__left">
+            <p class="footer-sticky__left__title">Finstreet 118 2561 Fintown</p>
+            <p class="footer-sticky__left__text">
+              Hello@finsweet.com 020 7993 2905
+            </p>
+          </div>
+          <div class="footer-sticky__right">
+            <a href="https://en-gb.facebook.com/"
+              ><img src="../images/icons/facebook.svg" alt="facebook"
+            /></a>
+            <a
+              href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicnUifQ%3D%3D%22%7D"
+              ><img src="../images/icons/twitter.svg" alt="twitter"
+            /></a>
+            <a href="https://www.instagram.com/"
+              ><img src="../images/icons/instagram.svg" alt="instagram"
+            /></a>
+            <a href="https://www.linkedin.com/home?originalSubdomain=uk"
+              ><img src="../images/icons/linkedin.svg" alt="linkedin"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="../js/category.js"></script>
+  </body>
+</html>

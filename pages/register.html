@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/register.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="navbar">
+          <a href="../index.html"
+            ><img src="../images/icons/Logo.svg" alt="logotip"
+          /></a>
+          <ul class="navbar__menu">
+            <li class="navbar__menu__item">
+              <a class="navbar__menu__link" href="../index.html">Home</a>
+            </li>
+            <li class="navbar__menu__item">
+              <a class="navbar__menu__link" href="../pages/category.html"
+                >Category</a
+              >
+            </li>
+            <li class="navbar__menu__item">
+              <a class="navbar__menu__link" href="../pages/all-posts.html"
+                >All posts</a
+              >
+            </li>
+            <li class="navbar__menu__item">
+              <a class="navbar__menu__link" href="../pages/register.html"
+                >Register</a
+              >
+            </li>
+          </ul>
+          <img
+            id="navbar__img__addBurger"
+            src="../images/icons/add.png"
+            alt="added burger"
+          />
+          <i class="fa-solid fa-xmark" id="removeburger"></i>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <h1 class="title">Register</h1>
+      <div class="form-box">
+        <form class="form-register" action="#">
+          <div class="input-control">
+            <input
+              class="Firstname"
+              id="register-input"
+              type="text"
+              placeholder="Firstname"
+            />
+            <div class="error"></div>
+          </div>
+          <div class="input-control">
+            <input
+              class="Lastname"
+              id="register-input"
+              type="text"
+              placeholder="Lastname"
+            />
+            <div class="error"></div>
+          </div>
+          <div class="input-control">
+            <input
+              class="Username"
+              id="register-input"
+              type="text"
+              placeholder="Username"
+            />
+            <div class="error"></div>
+          </div>
+          <div class="input-control">
+            <input
+              class="Password"
+              id="register-input"
+              type="password"
+              placeholder="Password"
+            />
+            <div class="error"></div>
+          </div>
+          <div class="input-control">
+            <input
+              class="confirm"
+              id="register-input"
+              type="password"
+              placeholder="Confirm password"
+            />
+            <div class="error"></div>
+          </div>
+          <button class="register-btn">Register</button>
+          <div id="output"></div>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer-sticky">
+          <div class="footer-sticky__left">
+            <p class="footer-sticky__left__title">Finstreet 118 2561 Fintown</p>
+            <p class="footer-sticky__left__text">
+              Hello@finsweet.com 020 7993 2905
+            </p>
+          </div>
+          <div class="footer-sticky__right">
+            <a href="https://en-gb.facebook.com/"
+              ><img src="../images/icons/facebook.svg" alt="facebook"
+            /></a>
+            <a
+              href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicnUifQ%3D%3D%22%7D"
+              ><img src="../images/icons/twitter.svg" alt="twitter"
+            /></a>
+            <a href="https://www.instagram.com/"
+              ><img src="../images/icons/instagram.svg" alt="instagram"
+            /></a>
+            <a href="https://www.linkedin.com/home?originalSubdomain=uk"
+              ><img src="../images/icons/linkedin.svg" alt="linkedin"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="../js/register.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+// @mixin for-small-desktop {
+//   @media (max-width: 1000px) {
+//     @content;
+//   }
+// }
+
+@mixin for-tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin for-phone {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin center-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
